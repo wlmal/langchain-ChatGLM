@@ -17,12 +17,12 @@ def torch_gc():
 
 
 tokenizer = AutoTokenizer.from_pretrained(
-    "THUDM/chatglm-6b",
+    "THUDM/chatglm-6b-int4-qe",
     trust_remote_code=True
 )
 model = (
     AutoModel.from_pretrained(
-        "THUDM/chatglm-6b",
+        "THUDM/chatglm-6b-int4-qe",
         trust_remote_code=True)
     .half()
     .cuda()
