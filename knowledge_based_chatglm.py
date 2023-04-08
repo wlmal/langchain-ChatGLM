@@ -65,7 +65,8 @@ def get_knowledge_based_answer(query, vector_store, chat_history=[]):
 
 
 if __name__ == "__main__":
-    filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+    #filepath = input("Input your local knowledge file path 请输入本地知识文件路径：")
+    filepath = "20000.txt"
     vector_store = init_knowledge_vector_store(filepath)
     history = []
     while True:
