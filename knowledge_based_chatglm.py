@@ -60,7 +60,8 @@ def get_knowledge_based_answer(query, vector_store, chat_history=[]):
     knowledge_chain.return_source_documents = False
     knowledge_chain.top_k_docs_for_context = 10
 
-    result = knowledge_chain({"question": query, "chat_history": chat_history})
+    #result = knowledge_chain({"question": query, "chat_history": chat_history})
+    result = knowledge_chain()
     return result, chatglm.history
 
 
